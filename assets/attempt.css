@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root {
+    --test: rgb(250, 235, 235);
+    --background: darkslategrey;
+}
+
+nav, footer {
+    height: 15vh;
+    background-color: var(--background);
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .name-box {
+    background-color: aqua;
+
+}
+
+.links-to-sections ul{
+    display: flex;
+    list-style: none;
+}
+
+li {
+
+}
+
+a {
+    text-decoration: none;
+    color: var(--test);
+}
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+
+main {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.all-sections {
+    width: 100%;
+}
+.subtitle-box {
+
+}
+
+.about-me p, .work p {
+    width: 80%;
+}
+
+.about-me, .work {
+    display: flex;
+}
