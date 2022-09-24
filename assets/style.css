@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* --background: purple; */
+    --primary-text: darkslategrey;
+}
+
+main {
+    height: 100vh;
+}
+
+nav {
+    background-color: darkslategrey;
+    display: flex;
+    height: 20%;
+    
+}
+
+.name-box {
+    background-color: blue;
+}
+
+.subtitle-box {
+
+}
+
+.links-to-sections {
+
+}
+
+.links-to-sections ul{
+    display: flex;
+}
+
+.links-to-sections ul li {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.links-to-sections ul li a {
+    color: bisque;
+    display:flex;
+    justify-content: space-around;
+}
+
+.subtitle-box div {
+
+}
+
+
+.all-sections{
+
+}
+
+.sections {
+
+}
+
+.contact-me{
+
+}
