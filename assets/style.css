@@ -5,62 +5,35 @@
 }
 
 :root {
-    /* --background: purple; */
-    --primary-text: darkslategrey;
+    --test: rgb(100, 100, 100);
+    --background: darkslategrey;
 }
 
-main {
-    height: 100vh;
+nav, footer {
+    height: 15vh;
+    background-color: var(--background);
+
 }
 
 nav {
-    background-color: darkslategrey;
     display: flex;
-    height: 20%;
-    
-}
-
-.name-box {
-    background-color: blue;
-}
-
-.subtitle-box {
-
-}
-
-.links-to-sections {
-
 }
 
 .links-to-sections ul{
     display: flex;
-}
-
-.links-to-sections ul li {
     list-style: none;
+}
+
+li {
+
+}
+
+a {
+    text-decoration: none;
+    color: var(--test);
+}
+
+main {
+    min-height: 70vh;
     display: flex;
-    justify-content: space-around;
-}
-
-.links-to-sections ul li a {
-    color: bisque;
-    display:flex;
-    justify-content: space-around;
-}
-
-.subtitle-box div {
-
-}
-
-
-.all-sections{
-
-}
-
-.sections {
-
-}
-
-.contact-me{
-
 }
