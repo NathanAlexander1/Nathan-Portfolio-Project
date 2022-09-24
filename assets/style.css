@@ -12,7 +12,7 @@
 body {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 100%;
 }
 
 /* NAV BAR */
@@ -21,7 +21,7 @@ body {
     width: 100%;
     justify-content: space-between;
     background-color: var(--background);
-    height: 15%;
+    height: 30%;
     align-items: center;
 
 }
@@ -46,11 +46,11 @@ li a {
 }
 
 /* MAIN SECTION */
+
 .main-section {
-    height: 70%;
     background-color: var(--background);
 }
-
+        /* subtitle section */
 .subtitle-section {
     height: 20%;
     background-color: aquamarine;
@@ -66,6 +66,31 @@ li a {
 
 }
 
+        /* content section */
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    color: aqua;
+}
+
+.about-me-section, .work-section {
+    display: flex;
+    flex-direction: row;
+    height: 40%;
+    flex-wrap: wrap;
+}
+
+.about-me-section p {
+    padding-left: 20vw;
+}
+
+.work-section img {
+    width: 250px;
+    height: 250px;
+}
+
+/* FOOTER SECTION */
 .footer-section {
     background-color: red;
     height: 15%;
