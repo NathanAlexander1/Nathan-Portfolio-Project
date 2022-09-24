@@ -44,3 +44,29 @@ li a {
     color: aliceblue;
     text-decoration: underline;
 }
+
+/* MAIN SECTION */
+.main-section {
+    height: 70%;
+    background-color: var(--background);
+}
+
+.subtitle-section {
+    height: 20%;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: flex-end;
+    align-items:flex-end;
+    
+}
+
+.subtitle-section h2 {
+    color: red;
+    padding: 0% 1% 1% 0%;
+
+}
+
+.footer-section {
+    background-color: red;
+    height: 15%;
+}
