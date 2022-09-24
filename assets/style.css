@@ -23,13 +23,13 @@ body {
     background-color: var(--background);
     height: 30%;
     align-items: center;
-
 }
 
 .nav-bar h1 {
     background-color: var(--test);
     color: var(--background);
     padding: 5px 10px 5px 60px;
+    margin: 1% 0 1% 0;
 }
 
 ul {
@@ -57,6 +57,7 @@ li a {
     display: flex;
     justify-content: flex-end;
     align-items:flex-end;
+    padding: 1% 0 0;
     
 }
 
@@ -72,17 +73,41 @@ li a {
     display: flex;
     flex-direction: column;
     color: aqua;
+    padding: 0 1% 0 1%
 }
 
-.about-me-section, .work-section {
+.about-me-section {
     display: flex;
     flex-direction: row;
     height: 40%;
     flex-wrap: wrap;
+    padding-top: 1%;
+    padding-bottom: 1%;    
 }
 
+.about-me-section h2 {
+    text-align: center;
+    border-right: 5%;
+}
 .about-me-section p {
-    padding-left: 20vw;
+    padding-left: 20%;
+}
+.work-section {
+    display: flex;
+    flex-direction: row;
+    height: 40%;
+    flex-wrap: wrap;
+    padding-top: 1%;
+    padding-bottom: 1%;    
+}
+
+
+.work-section h2 {
+    text-align: center;
+}
+
+.image-test-section {
+    padding-left: 20%;
 }
 
 .work-section img {
@@ -93,5 +118,6 @@ li a {
 /* FOOTER SECTION */
 .footer-section {
     background-color: red;
-    height: 15%;
+    height: 30%;
 }
+
