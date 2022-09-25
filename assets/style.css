@@ -62,7 +62,7 @@ li a {
 }
 
 .subtitle-section h2 {
-    color: red;
+    color: var(--background);
     padding: 0% 1% 1% 0%;
 
 }
@@ -85,7 +85,7 @@ li a {
     padding-bottom: 1%;    
 }
 
-.about-me-section h2 {
+.about-me-section #about-me-id {
     text-align: center;
     border-right: 5%;
 }
@@ -101,8 +101,7 @@ li a {
     padding-bottom: 1%;    
 }
 
-
-.work-section h2 {
+.work-section #work-id {
     text-align: center;
 }
 
@@ -116,8 +115,13 @@ li a {
 }
 
 /* FOOTER SECTION */
-.footer-section {
-    background-color: red;
-    height: 30%;
+#footer-section {
+    display: flex;
+    color: black;
+
+}
+
+.contact-information {
+
 }
 
