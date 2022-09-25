@@ -78,7 +78,7 @@ li a {
     display: flex;
     flex-direction: column;
     color: aqua;
-    padding: 0 1% 0 1%
+    padding: 0 1% 0 1%;
 }
 
 .about-me-section {
@@ -87,23 +87,20 @@ li a {
     height: 40%;
     /* flex-wrap: wrap; */
     padding-top: 1%;
-    padding-bottom: 1%;   
+    padding-bottom: 1%; 
+    width: 100%;  
 }
 
 #about-me-header {
     display: flex;
     align-items: center;
-}
-
-/* note that I got about-me-header and work-me-content to align but in two differnet ways */
-#about-me-header {
-    display: flex;
-    align-items: center;
-    border-right: 5px solid black;
+    width: 20%;
 }
 
 #about-me-content {
-    padding-left: 20%;
+    border-left: 5px solid black;
+    width: 80%;
+    padding-left: 2%;
 }
 
 .work-section {
@@ -111,29 +108,28 @@ li a {
     flex-direction: row;
     height: 40%;
     padding-top: 1%;
-    padding-bottom: 1%;    
+    padding-bottom: 1%;   
+    width: 100%; 
 }
 
-/* .work-section #work-id {
-    text-align: center;
-} */
+.work-section #work-id {
+    width: 20%;
+}
+
 
 #work-section-content {
     display: flex;
     align-items: center;
-}
-
-#work-section-content .images{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    padding-left: 5%;
-    border-left: 5px solid black;
-    
+    justify-content: space-between;
 }
 
 .image-test-section {
-    padding-left: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    padding-left: 2%;
+    border-left: 5px solid black;
+    width: 80%;
 }
 
 .work-section img {
@@ -144,17 +140,44 @@ li a {
 /* FOOTER SECTION */
 #footer-section {
     display: flex;
-    color: var(--background);
-    background-color: var(--test);
-    justify-content: space-between;
+    width: 100%;
+    color: var(--test);
+    background-color: var(--background);
+    justify-content:space-between;
+    /* padding: 5%; */
+    height: 100px;
+    padding: 0 1% 2% 1%;
 
+}
+
+#footer-header-id{
+    display: flex;
+    width: 20%;
 }
 
 #contact-me-id {
-    border-right: 5px solid black;
+    align-self: center;
 }
-/* 
-.contact-information {
 
+#footer-contact-information{
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly;
+    border-left: 5px solid black;
+}
+
+#footer-contact-information ul{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+#footer-contact-information ul li{
+    text-decoration: underline;
+}
+
+/* #footer-section #footer-contact-information {
+    border-left: 5px solid black;
 } */
+
 
