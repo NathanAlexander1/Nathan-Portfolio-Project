@@ -42,7 +42,7 @@ ul {
 
 li a {
     text-decoration: none;
-    color: aliceblue;
+    color: var(--test);
     text-decoration: underline;
 }
 
@@ -62,8 +62,10 @@ li a {
 }
 
 .subtitle-section img{
-    height: 120px;
-    width: 120px;
+    /* height: 120px;
+    width: 120px; */
+    height: 90%;
+    width: 10%;
     margin-left: 1%;
     align-self: center;
     border-radius: 90px;
@@ -74,9 +76,11 @@ li a {
     display: flex;
     align-self: center;
     width: 35%;
-    padding: 3% 3% 3% 1%;
+    /* height: 90%; */
+    padding: 2.5% 3% 2.5% 1%;
     font-size: larger;
-    border-radius: 25px 0 0 25px;
+    border-radius: 180px 0 0 180px;
+    margin: 3% 0 3% 0;
 }
 
 .subtitle-section h2 {
@@ -90,7 +94,7 @@ li a {
 .main-content {
     display: flex;
     flex-direction: column;
-    color: aqua;
+    color: var(--test);
     padding: 0 1% 0 1%;
 }
 
@@ -109,6 +113,7 @@ li a {
     align-items: center;
     width: 20%;
     justify-content: center;
+    font-size: 135%;
 }
 
 #about-me-content {
@@ -128,7 +133,7 @@ li a {
 
 .work-section #work-id {
     width: 20%;
- 
+    font-size: 175%;
 }
 
 #work-section-content {
@@ -139,7 +144,8 @@ li a {
 
 #work-id {
     display: flex;
-    justify-content:center;
+    justify-content: center;
+    font-size: 175%;
 }
 
 .image-test-section {
@@ -151,9 +157,22 @@ li a {
     width: 80%;
 }
 
-.image-section-for-title h3 {
+.image-section-for-title{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1%
+}
+
+#large-to-do-list {
+    width: 100%;
+}
+
+.image-section-for-title h3 {
+    /* display: flex;
+    flex-direction: row;
     justify-content: center;
+    position: relative; */
     /* margin: 0 25% 0 25%; */
 }
 
@@ -186,6 +205,7 @@ li a {
     width: 20%;
     color: var(--test);
     justify-content: center;
+    font-size: 135%;
 }
 
 #contact-me-id {
@@ -213,20 +233,86 @@ li a {
 
 
 /* Tablets - header changes color */
-@media screen and (max-width: 992px) {
-    .nav-bar {
+/* @media screen and (max-width: 992px) {
+    body {
         background-color: black;
     }
-  }
+  } */
   
   /* Large smartphones - navbar changes color */
   @media screen and (max-width: 768px) {
+    /* NavBar */
     .nav-bar {
-        background-color: black;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-bar h1 {
+        width: 100%;
+        border-radius: 0;    
+    }
+
+    .nav-bar ul {
+        justify-content: space-evenly;
+        width: 100%;
+        height: 20%;
+        padding: 1% 0 2% 0;
+    }
+/* Main section - subtitle and image */
+    .subtitle-section {
+        width: 100%;
+
+    }
+
+    .test-box {
+        width: 50%;
+        padding: 2% 0 2% 2%;
+    }
+
+    .subtitle-section img {
+        /* width: 20%; */
+        /* margin: 2% 0 2% 3%; */
+        padding: 2%;
+    }
+
+    /* main section - about me */
+    .about-me-section {
+        flex-direction: column;
+    }
+
+    #about-me-header {
+        width: 100%;
+        text-align: center;
+    }
+
+    .about-me-header h2 {
+        text-align: center;
+    }
+
+    .about-me-section {
+        width: 100%;
+    }
+
+    #about-me-content {
+        border-top: 5px solid black;
+        border-left: 0;
+        width: 100%;
+        padding-top: 3%;
+    }
+
+    /* Main Section - about meWork  */
+
+    #work-section-content {
+        flex-direction: column;
+    }
+
+    .image-test-section {
+        border-top: 5px solid black;
+        border-left: 0;
     }
   }
   
   /* Small smartphones - image placeholders change color */
-  @media screen and (max-width: 576px) {
+  /* @media screen and (max-width: 576px) {
  
-  }
+  } */
