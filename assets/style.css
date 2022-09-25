@@ -85,29 +85,51 @@ li a {
     display: flex;
     flex-direction: row;
     height: 40%;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     padding-top: 1%;
-    padding-bottom: 1%;    
+    padding-bottom: 1%;   
 }
 
-.about-me-section #about-me-id {
-    text-align: center;
-    border-right: 5%;
+#about-me-header {
+    display: flex;
+    align-items: center;
 }
-.about-me-section p {
+
+/* note that I got about-me-header and work-me-content to align but in two differnet ways */
+#about-me-header {
+    display: flex;
+    align-items: center;
+    border-right: 5px solid black;
+}
+
+#about-me-content {
     padding-left: 20%;
 }
+
 .work-section {
     display: flex;
     flex-direction: row;
     height: 40%;
-    flex-wrap: wrap;
     padding-top: 1%;
     padding-bottom: 1%;    
 }
 
-.work-section #work-id {
+/* .work-section #work-id {
     text-align: center;
+} */
+
+#work-section-content {
+    display: flex;
+    align-items: center;
+}
+
+#work-section-content .images{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-left: 5%;
+    border-left: 5px solid black;
+    
 }
 
 .image-test-section {
@@ -124,7 +146,12 @@ li a {
     display: flex;
     color: var(--background);
     background-color: var(--test);
+    justify-content: space-between;
 
+}
+
+#contact-me-id {
+    border-right: 5px solid black;
 }
 /* 
 .contact-information {
