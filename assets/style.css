@@ -5,7 +5,7 @@
 }
 
 :root {
-    --test: rgb(250, 235, 235);
+    --test: aquamarine;
     --background: darkslategrey;
 }
 
@@ -52,13 +52,18 @@ li a {
 }
         /* subtitle section */
 .subtitle-section {
-    height: 20%;
-    background-color: aquamarine;
+    height: 20vh;
+    background-color: var(--test);
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items:flex-end;
-    padding: 1% 0 0;
-    
+}
+
+.subtitle-section img{
+    height: 120px;
+    width: 120px;
+    margin-left: 1%;
+    align-self: center;
 }
 
 .subtitle-section h2 {
@@ -117,11 +122,12 @@ li a {
 /* FOOTER SECTION */
 #footer-section {
     display: flex;
-    color: black;
+    color: var(--background);
+    background-color: var(--test);
 
 }
-
+/* 
 .contact-information {
 
-}
+} */
 
