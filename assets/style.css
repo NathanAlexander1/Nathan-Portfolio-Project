@@ -30,6 +30,7 @@ body {
     color: var(--background);
     padding: 5px 10px 5px 60px;
     margin: 1% 0 1% 0;
+    border-radius: 0 25px 25px 0;
 }
 
 ul {
@@ -65,6 +66,7 @@ li a {
     width: 120px;
     margin-left: 1%;
     align-self: center;
+    border-radius: 90px;
 }
 
 .test-box{
@@ -74,6 +76,7 @@ li a {
     width: 35%;
     padding: 3% 3% 3% 1%;
     font-size: larger;
+    border-radius: 25px 0 0 25px;
 }
 
 .subtitle-section h2 {
@@ -128,25 +131,41 @@ li a {
  
 }
 
-
 #work-section-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
+#work-id {
+    display: flex;
+    justify-content:center;
+}
+
 .image-test-section {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     padding-left: 2%;
     border-left: 5px solid black;
     width: 80%;
 }
 
+.image-section-for-title h3 {
+    display: flex;
+    justify-content: center;
+    /* margin: 0 25% 0 25%; */
+}
+
+.work-section a {
+    width: 250px;
+    height: 250px; 
+}
 .work-section img {
     width: 250px;
     height: 250px;
+    border-radius: 180px;
+
 }
 
 /* FOOTER SECTION */
@@ -195,21 +214,19 @@ li a {
 
 /* Tablets - header changes color */
 @media screen and (max-width: 992px) {
-    header {
-      background: #772014;
+    .nav-bar {
+        background-color: black;
     }
   }
   
   /* Large smartphones - navbar changes color */
   @media screen and (max-width: 768px) {
-    nav {
-      background-color: #bb8588;
+    .nav-bar {
+        background-color: black;
     }
   }
   
   /* Small smartphones - image placeholders change color */
   @media screen and (max-width: 576px) {
-    .sample-img {
-      background-color: #8ac4ff;
-    }
+ 
   }
