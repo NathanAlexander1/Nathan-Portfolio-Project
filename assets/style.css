@@ -57,6 +57,7 @@ li a {
     display: flex;
     justify-content: space-between;
     align-items:flex-end;
+    align-items: center;
 }
 
 .subtitle-section img{
@@ -66,8 +67,17 @@ li a {
     align-self: center;
 }
 
+.test-box{
+    background-color: var(--background);
+    display: flex;
+    align-self: center;
+    width: 35%;
+    padding: 3% 3% 3% 1%;
+    font-size: larger;
+}
+
 .subtitle-section h2 {
-    color: var(--background);
+    color: var(--test);
     padding: 0% 1% 1% 0%;
 
 }
@@ -86,8 +96,8 @@ li a {
     flex-direction: row;
     height: 40%;
     /* flex-wrap: wrap; */
-    padding-top: 1%;
-    padding-bottom: 1%; 
+    padding-top: 2%;
+    padding-bottom: 2%; 
     width: 100%;  
 }
 
@@ -95,6 +105,7 @@ li a {
     display: flex;
     align-items: center;
     width: 20%;
+    justify-content: center;
 }
 
 #about-me-content {
@@ -107,13 +118,14 @@ li a {
     display: flex;
     flex-direction: row;
     height: 40%;
-    padding-top: 1%;
-    padding-bottom: 1%;   
+    padding-top: 2%;
+    padding-bottom: 2%;   
     width: 100%; 
 }
 
 .work-section #work-id {
     width: 20%;
+ 
 }
 
 
@@ -126,7 +138,7 @@ li a {
 .image-test-section {
     display: flex;
     flex-wrap: wrap;
-    /* align-items: center; */
+    justify-content: center;
     padding-left: 2%;
     border-left: 5px solid black;
     width: 80%;
@@ -146,17 +158,20 @@ li a {
     justify-content:space-between;
     /* padding: 5%; */
     height: 100px;
-    padding: 0 1% 2% 1%;
+    padding: 1% 1% 2% 1%;
 
 }
 
 #footer-header-id{
     display: flex;
     width: 20%;
+    color: var(--test);
+    justify-content: center;
 }
 
 #contact-me-id {
     align-self: center;
+    color: var(--test);
 }
 
 #footer-contact-information{
@@ -174,10 +189,27 @@ li a {
 
 #footer-contact-information ul li{
     text-decoration: underline;
+    color: var(--test);
 }
 
-/* #footer-section #footer-contact-information {
-    border-left: 5px solid black;
-} */
 
-
+/* Tablets - header changes color */
+@media screen and (max-width: 992px) {
+    header {
+      background: #772014;
+    }
+  }
+  
+  /* Large smartphones - navbar changes color */
+  @media screen and (max-width: 768px) {
+    nav {
+      background-color: #bb8588;
+    }
+  }
+  
+  /* Small smartphones - image placeholders change color */
+  @media screen and (max-width: 576px) {
+    .sample-img {
+      background-color: #8ac4ff;
+    }
+  }
