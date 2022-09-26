@@ -244,6 +244,13 @@ li a {
     color: var(--test);
 }
 
+img:hover {
+    border-color: yellow;
+}
+
+#image-anchor-id:hover {
+    border-color: yellow;
+}
 
 /* Tablets - header changes color */
   
