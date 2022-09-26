@@ -26,9 +26,12 @@ body {
 }
 
 .nav-bar h1 {
+    display: flex;
+    justify-content: flex-end;
+    width: 40%;
     background-color: var(--test);
     color: var(--background);
-    padding: 5px 10px 5px 60px;
+    padding-right: 2%;
     margin: 1% 0 1% 0;
     border-radius: 0 25px 25px 0;
 }
@@ -86,7 +89,7 @@ li a {
 .subtitle-section h2 {
     color: var(--test);
     padding: 0% 1% 1% 0%;
-
+    margin-left: 5%;
 }
 
         /* content section */
@@ -273,7 +276,7 @@ li a {
 
     .test-box {
         width: 50%;
-        padding: 2% 0 2% 2%;
+        padding: 3.5% 0 3.5% 2%;
     }
 
     .subtitle-section img {
@@ -343,7 +346,7 @@ li a {
     }
 }
 
-  /* Small smartphones - image placeholders change color   */
+  /* Small smartphones   */
   
   @media screen and (max-width: 576px) {
     /* NavBar */
@@ -372,9 +375,13 @@ li a {
     }
 
     .test-box {
-        width: 50%;
-        padding: 2% 0 2% 2%;
+        width: 65%;
+        padding: 4.5% 0 4.5% 2%;
     }
+
+    /* .subtitle-section img {
+
+    } */
 
     .subtitle-section img {
         margin-left: 5%;
