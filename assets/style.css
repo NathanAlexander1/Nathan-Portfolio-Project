@@ -65,7 +65,7 @@ li a {
     /* height: 120px;
     width: 120px; */
     height: 90%;
-    width: 10%;
+    width: 12.5%;
     margin-left: 1%;
     align-self: center;
     border-radius: 90px;
@@ -114,6 +114,7 @@ li a {
     width: 20%;
     justify-content: center;
     font-size: 135%;
+    padding-bottom: 1%;
 }
 
 #about-me-content {
@@ -131,11 +132,6 @@ li a {
     width: 100%; 
 }
 
-.work-section #work-id {
-    width: 20%;
-    font-size: 175%;
-}
-
 #work-section-content {
     display: flex;
     align-items: center;
@@ -145,7 +141,9 @@ li a {
 #work-id {
     display: flex;
     justify-content: center;
-    font-size: 175%;
+    font-size: 200%;
+    width: 20%;
+    padding-bottom: 1%;
 }
 
 .image-test-section {
@@ -164,27 +162,38 @@ li a {
     margin: 1%
 }
 
+.image-section-for-title h3{
+    padding-bottom: 2%;
+    margin: 5px 4% 10px 4%;
+}
+
 #large-to-do-list {
     width: 100%;
 }
 
-.image-section-for-title h3 {
-    /* display: flex;
-    flex-direction: row;
+#image-anchor-id {
+    display: flex;
+    width: 100%;
     justify-content: center;
-    position: relative; */
-    /* margin: 0 25% 0 25%; */
+    background-color: #FF7F50;
+    border-radius: 180px;
+    border: 3px solid  var(--test);
 }
 
 .work-section a {
     width: 250px;
-    height: 250px; 
+    height: 250px;
 }
 .work-section img {
     width: 250px;
     height: 250px;
     border-radius: 180px;
+    border: 3px solid  var(--test); 
+}
 
+#large-image-id {
+    border: none;
+    padding: 1%;
 }
 
 /* FOOTER SECTION */
@@ -196,7 +205,7 @@ li a {
     justify-content:space-between;
     /* padding: 5%; */
     height: 100px;
-    padding: 1% 1% 2% 1%;
+    padding: 2% 1% 2% 1%;
 
 }
 
@@ -206,6 +215,7 @@ li a {
     color: var(--test);
     justify-content: center;
     font-size: 135%;
+    padding: 1% 0 1% 0;
 }
 
 #contact-me-id {
@@ -233,11 +243,6 @@ li a {
 
 
 /* Tablets - header changes color */
-/* @media screen and (max-width: 992px) {
-    body {
-        background-color: black;
-    }
-  } */
   
   /* Large smartphones - navbar changes color */
   @media screen and (max-width: 768px) {
@@ -249,7 +254,9 @@ li a {
 
     .nav-bar h1 {
         width: 100%;
-        border-radius: 0;    
+        border-radius: 0;   
+        display: flex;
+        justify-content: center; 
     }
 
     .nav-bar ul {
@@ -270,9 +277,8 @@ li a {
     }
 
     .subtitle-section img {
-        /* width: 20%; */
-        /* margin: 2% 0 2% 3%; */
-        padding: 2%;
+        margin-left: 5%;
+        width: 20%;
     }
 
     /* main section - about me */
@@ -296,8 +302,9 @@ li a {
     #about-me-content {
         border-top: 5px solid black;
         border-left: 0;
-        width: 100%;
+        width: 80%;
         padding-top: 3%;
+        align-self: center;
     }
 
     /* Main Section - about meWork  */
@@ -309,10 +316,129 @@ li a {
     .image-test-section {
         border-top: 5px solid black;
         border-left: 0;
+        width: 80%;
+        padding-top: 3%;
     }
-  }
+
+    .image-section-for-title {
+        margin: 0%;
+    }
   
-  /* Small smartphones - image placeholders change color */
-  /* @media screen and (max-width: 576px) {
- 
-  } */
+    /* Footer section */
+    #footer-section {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 12%;
+    }
+
+    #footer-header-id {
+        width: 100%;
+    }
+
+    #footer-contact-information {
+        width: 80%;
+        border-top: 5px solid black;
+        border-left: none;
+        padding-top: 1%;
+    }
+}
+
+  /* Small smartphones - image placeholders change color   */
+  
+  @media screen and (max-width: 576px) {
+    /* NavBar */
+    .nav-bar {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-bar h1 {
+        width: 100%;
+        border-radius: 0;   
+        display: flex;
+        justify-content: center; 
+    }
+
+    .nav-bar ul {
+        justify-content: space-evenly;
+        width: 100%;
+        height: 20%;
+        padding: 1% 0 2% 0;
+    }
+/* Main section - subtitle and image */
+    .subtitle-section {
+        width: 100%;
+
+    }
+
+    .test-box {
+        width: 50%;
+        padding: 2% 0 2% 2%;
+    }
+
+    .subtitle-section img {
+        margin-left: 5%;
+        width: 20%;
+    }
+
+    /* main section - about me */
+    .about-me-section {
+        flex-direction: column;
+    }
+
+    #about-me-header {
+        width: 100%;
+        text-align: center;
+    }
+
+    .about-me-header h2 {
+        text-align: center;
+    }
+
+    .about-me-section {
+        width: 100%;
+    }
+
+    #about-me-content {
+        border-top: 5px solid black;
+        border-left: 0;
+        width: 80%;
+        padding-top: 3%;
+        align-self: center;
+    }
+
+    /* Main Section - about meWork  */
+
+    #work-section-content {
+        flex-direction: column;
+    }
+
+    .image-test-section {
+        border-top: 5px solid black;
+        border-left: 0;
+        width: 80%;
+        padding-top: 3%;
+    }
+
+    .image-section-for-title {
+        margin: 0%;
+    }
+  
+    /* Footer section */
+    #footer-section {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 12%;
+    }
+
+    #footer-header-id {
+        width: 100%;
+    }
+
+    #footer-contact-information {
+        width: 80%;
+        border-top: 5px solid black;
+        border-left: none;
+        padding-top: 1%;
+    }
+}
