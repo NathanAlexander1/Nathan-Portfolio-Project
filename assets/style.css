@@ -181,6 +181,7 @@ li a {
     background-color: #FF7F50;
     border-radius: 180px;
     border: 3px solid  var(--test);
+    box-shadow: 1vh 1vw 10px black;
 }
 
 .work-section a {
@@ -193,6 +194,11 @@ li a {
     border-radius: 180px;
     border: 3px solid  var(--test); 
 }
+
+.image-small{
+    box-shadow: 1vh 1vw 10px black;
+}
+
 
 #large-image-id {
     border: none;
