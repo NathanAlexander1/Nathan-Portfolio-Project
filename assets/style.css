@@ -49,6 +49,10 @@ li a {
     text-decoration: underline;
 }
 
+a:hover {
+        color: yellow;
+}
+
 /* MAIN SECTION */
 
 .main-section {
@@ -57,12 +61,13 @@ li a {
         /* subtitle section */
 .subtitle-section {
     height: 20vh;
+    /* width: 100%; */
     background-color: var(--test);
     display: flex;
     justify-content: space-between;
     align-items:flex-end;
     align-items: center;
-    background-image: url("./Images/potential-banner-image.png");
+    background-image: url("./Images/banner-image.png");
 }
 
 .subtitle-section img{
@@ -71,7 +76,7 @@ li a {
     height: 90%;
     width: 12.5%;
     margin-left: 1%;
-    margin-top: -.75%
+    margin-top: -.75%;
     align-self: center;
     border-radius: 90px;
     box-shadow: 1vh 1vw 10px black;
@@ -174,6 +179,7 @@ li a {
     margin: 5px 4% 10px 4%;
     text-decoration: underline;
 }
+
 
 #large-to-do-list {
     width: 100%;
