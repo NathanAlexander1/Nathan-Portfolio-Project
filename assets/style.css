@@ -172,6 +172,7 @@ li a {
 
 #large-to-do-list {
     width: 100%;
+    margin-top: -2%;
 }
 
 #image-anchor-id {
@@ -336,8 +337,18 @@ img:hover {
         padding-top: 3%;
     }
 
+    .image-section-for-title h3{
+        /* padding-top: 5%; */
+        margin: 2.5% 4% 0 4%;
+        text-decoration:underline;
+        }
+
     .image-section-for-title {
         margin: 0%;
+    }
+
+    .image-section-for-title a {
+        margin-bottom: 10%;
     }
   
     /* Footer section */
@@ -465,7 +476,7 @@ img:hover {
 
 /* Small smartphones   */
   
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 365px) {
     /* NavBar */
     .nav-bar {
         flex-direction: column;
@@ -547,6 +558,10 @@ img:hover {
 
     .image-section-for-title {
         margin: 0%;
+    }
+
+    #image-anchor-id, #large-image-id {
+        height: 100%;
     }
   
     /* Footer section */
