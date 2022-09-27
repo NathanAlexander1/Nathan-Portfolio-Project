@@ -476,7 +476,7 @@ img:hover {
 
 /* Small smartphones   */
   
-@media screen and (max-width: 365px) {
+@media screen and (max-width: 375px) {
     /* NavBar */
     .nav-bar {
         flex-direction: column;
@@ -503,18 +503,15 @@ img:hover {
 
     }
 
+
     .test-box {
         width: 65%;
         padding: 4.5% 0 4.5% 2%;
     }
 
-    /* .subtitle-section img {
-
-    } */
-
     .subtitle-section img {
         margin: 0 2% 0 2%;
-        width: 30%;
+        width: 35%;
     }
 
     /* main section - about me */
