@@ -61,7 +61,7 @@ a:hover {
         /* subtitle section */
 .subtitle-section {
     height: 20vh;
-    /* width: 100%; */
+    width: 100%;
     background-color: var(--test);
     display: flex;
     justify-content: space-between;
@@ -417,10 +417,6 @@ img:hover {
         width: 65%;
         padding: 4.5% 0 4.5% 2%;
     }
-
-    /* .subtitle-section img {
-
-    } */
 
     .subtitle-section img {
         margin-left: 5%;
