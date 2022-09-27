@@ -270,7 +270,7 @@ img:hover {
 /* Tablets - header changes color */
   
   /* Large smartphones - navbar changes color */
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 812px) {
     /* NavBar */
     .nav-bar {
         flex-direction: column;
@@ -484,7 +484,7 @@ img:hover {
 
 /* Small smartphones   */
   
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 375px) {
     /* NavBar */
     .nav-bar {
         flex-direction: column;
