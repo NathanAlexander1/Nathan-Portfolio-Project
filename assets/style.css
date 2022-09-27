@@ -484,7 +484,7 @@ img:hover {
 
 /* Small smartphones   */
   
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 360px) {
     /* NavBar */
     .nav-bar {
         flex-direction: column;
