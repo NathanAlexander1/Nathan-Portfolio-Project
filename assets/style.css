@@ -267,10 +267,12 @@ a:hover {
 
 img:hover {
     border-color: yellow;
+    transform: scale(105%);
 }
 
 #image-anchor-id:hover {
     border-color: yellow;
+    transform: scale(101%);
 }
 
 /* Tablets - header changes color */
