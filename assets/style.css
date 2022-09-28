@@ -13,6 +13,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
+    width: 100%;
 }
 
 /* NAV BAR */
@@ -71,9 +72,7 @@ a:hover {
 }
 
 .subtitle-section img{
-    /* height: 120px;
-    width: 120px; */
-    height: 90%;
+    height: 100%;
     width: 12.5%;
     margin-left: 1%;
     margin-top: -.75%;
